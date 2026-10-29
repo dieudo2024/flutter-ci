@@ -6,7 +6,7 @@ class Counter {
   void increment() => _value++;
 
   void decrement() {
-    if (_value >= 0) {
+    if (_value > 0) {
       _value--;
     }
   }
