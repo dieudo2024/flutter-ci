@@ -1,0 +1,16 @@
+name: Flutter checks and APK delivery
+
+on:
+  push:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  ci:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 20
+    steps:
+      - name: Get the project files
+        uses: actions/checkout@v7
